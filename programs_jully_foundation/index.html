@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs - Jully Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-background": "#0b1c30",
+                        "surface-variant": "#d3e4fe",
+                        "on-surface": "#0b1c30",
+                        "secondary-fixed-dim": "#4ae176",
+                        "outline": "#837282",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#7b0091",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#004c6e",
+                        "on-primary-container": "#fdc4ff",
+                        "secondary-fixed": "#6bff8f",
+                        "outline-variant": "#d5c0d3",
+                        "primary": "#79008e",
+                        "surface": "#f8f9ff",
+                        "error-container": "#ffdad6",
+                        "on-surface-variant": "#514251",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-fixed": "#001e2f",
+                        "on-primary-fixed": "#350040",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#213145",
+                        "tertiary-fixed-dim": "#89ceff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container": "#e5eeff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-secondary-container": "#007432",
+                        "surface-container-high": "#dce9ff",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary-fixed": "#c9e6ff",
+                        "primary-container": "#9c15b5",
+                        "error": "#ba1a1a",
+                        "inverse-primary": "#f8acff",
+                        "primary-fixed-dim": "#f8acff",
+                        "secondary-container": "#6bff8f",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-container": "#aedcff",
+                        "on-secondary-fixed": "#002109",
+                        "surface-dim": "#cbdbf5",
+                        "tertiary-container": "#00638e",
+                        "background": "#f8f9ff",
+                        "secondary": "#006e2f",
+                        "primary-fixed": "#ffd6ff",
+                        "on-secondary-fixed-variant": "#005321",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#9d18b6",
+                        "tertiary": "#004a6c"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "stack-lg": "64px",
+                        "stack-sm": "16px",
+                        "container-max": "1280px",
+                        "margin": "32px",
+                        "stack-md": "32px"
+                    },
+                    fontFamily: {
+                        "caption": ["Manrope"],
+                        "label-bold": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "headline-md": ["Plus Jakarta Sans"],
+                        "headline-lg": ["Plus Jakarta Sans"],
+                        "display": ["Plus Jakarta Sans"],
+                        "body-lg": ["Manrope"]
+                    },
+                    fontSize: {
+                        "caption": ["12px", { "lineHeight": "1.4", "fontWeight": "500" }],
+                        "label-bold": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "display": ["48px", { "lineHeight": "1.1", "fontWeight": "800" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="../assets/css/jully-foundation-polish.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm w-full">
+<div class="flex justify-between items-center w-full max-w-7xl mx-auto px-6 py-4">
+<a class="text-2xl font-extrabold tracking-tight text-primary inline-flex items-center gap-3" href="../home_jully_foundation_premium/"><img class="w-10 h-10 rounded-lg object-contain bg-white" src="../logo_jully_foundationpng_page2_transparent.png/screen.png" alt="Jully Foundation logo"/><span>Jully Foundation</span></a>
+<ul class="hidden md:flex gap-6 items-center">
+<li class="cursor-pointer active:scale-95 transition-transform">
+<a class="font-headline-md text-sm font-medium text-slate-600 hover:text-primary hover:opacity-90 transition-all duration-200" href="../home_jully_foundation_premium/">Home</a>
+</li>
+<li class="cursor-pointer active:scale-95 transition-transform">
+<a class="font-headline-md text-sm font-medium text-slate-600 hover:text-primary hover:opacity-90 transition-all duration-200" href="../about_us_jully_foundation/">About Us</a>
+</li>
+<li class="cursor-pointer active:scale-95 transition-transform">
+<a class="font-headline-md text-sm font-medium text-primary border-b-2 border-primary pb-1 font-bold hover:opacity-90 transition-all duration-200" href="../programs_jully_foundation/">Programs</a>
+</li>
+<li class="cursor-pointer active:scale-95 transition-transform">
+<a class="font-headline-md text-sm font-medium text-slate-600 hover:text-primary hover:opacity-90 transition-all duration-200" href="../impact_jully_foundation/">Impact</a>
+</li>
+<li class="cursor-pointer active:scale-95 transition-transform">
+<a class="font-headline-md text-sm font-medium text-slate-600 hover:text-primary hover:opacity-90 transition-all duration-200" href="../projects_jully_foundation/">Projects</a>
+</li>
+<li class="cursor-pointer active:scale-95 transition-transform">
+<a class="font-headline-md text-sm font-medium text-slate-600 hover:text-primary hover:opacity-90 transition-all duration-200" href="../gallery_jully_foundation/">Gallery</a>
+</li>
+</ul>
+<div class="hidden md:flex gap-4">
+<a class="font-label-bold text-label-bold text-primary border border-primary px-4 py-2 rounded-lg hover:bg-primary/5 transition-colors" href="../contact_jully_foundation/">Contact</a>
+<a class="font-label-bold text-label-bold bg-secondary text-white px-4 py-2 rounded-lg hover:bg-secondary/90 transition-colors" href="../donate_jully_foundation/">Donate</a>
+</div>
+<!-- Mobile Menu Placeholder -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative bg-surface-variant py-stack-lg overflow-hidden">
+<!-- African-inspired subtle geometric pattern overlay -->
+<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, #79008e 1px, transparent 0); background-size: 24px 24px;"></div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10 flex flex-col md:flex-row items-center gap-gutter">
+<div class="md:w-1/2">
+<h1 class="font-display text-display text-primary mb-stack-sm">Transformative Programs for Sustainable Impact</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">We implement community-driven initiatives that foster long-term resilience, empowerment, and environmental stewardship across Africa.</p>
+</div>
+<div class="md:w-1/2 w-full aspect-video rounded-xl overflow-hidden shadow-lg border border-outline-variant/30">
+<img alt="Circular economy and green skills products" class="w-full h-full object-cover" data-alt="Reusable bags and upcycled products created through circular economy and green vocational skills programs." src="../assets/images/programs/bags-showcase.jpg"/>
+</div>
+</div>
+</section>
+<!-- Programs Grid -->
+<section class="py-stack-lg bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Program 1 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Women engaged in a peace-building circle" class="w-full h-full object-cover" data-alt="A high-quality editorial photo showing a diverse group of African women sitting in a circle, engaged in a heartfelt and constructive dialogue about community peacebuilding. The lighting is soft and natural, emphasizing their expressions of hope and determination. The overall aesthetic is clean, modern, and aligned with a corporate NGO style, featuring soft ambient shadows and a muted background that makes the subjects stand out. Subtle deep purple tones are woven into the scene." src="../assets/images/programs/sustainable-empowerher-training.jpg"/>
+<div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="diversity_1">diversity_1</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Sustainable EmpowerHer for Peace</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Equipping women with leadership and conflict resolution skills to foster sustainable peace in their communities.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../sustainable_empowerher_for_peace/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program 2 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Youth learning green technology skills" class="w-full h-full object-cover" data-alt="A bright, professional photograph of African youth in a modern workshop setting, actively learning how to assemble solar panels. The environment is clean, well-lit, and conveys a sense of innovation and environmental stewardship. The lighting highlights the focused expressions of the students. The visual style uses a high-key, modern light-mode aesthetic with vibrant green accents symbolizing sustainable growth and technical empowerment." src="../assets/images/programs/green-vocational-training.jpg"/>
+<div class="absolute top-4 left-4 bg-secondary/90 backdrop-blur-sm rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="handyman">handyman</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Green Vocational Skills Empowerment</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Training youth in recycling, upcycling, repair culture, reusable product making, and eco-friendly trades for a greener economy.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../green_vocational_skills_empowerment/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program 3 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Young girls learning computer skills" class="w-full h-full object-cover" data-alt="A heartwarming, high-quality image of young African schoolgirls excitedly gathered around a modern laptop in a brightly lit classroom. Their faces show genuine curiosity and joy as they learn basic ICT skills. The room is organized and inspiring, reflecting a high-end corporate NGO standard. The lighting is crisp and natural, emphasizing the vibrant green and deep purple brand accents subtly present in the classroom decor." src="../assets/images/programs/girls-education-ict.jpg"/>
+<div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="computer">computer</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Girls’ Education and ICT Skills</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Bridging the digital divide by providing young girls with access to technology and essential digital literacy.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../girls_education_ict_skills/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program 4 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Community waste collection and climate resilience activity" class="w-full h-full object-cover" data-alt="Community members taking practical climate action through waste collection, recycling awareness, and cleaner-community activities." src="../assets/images/programs/waste-cloth-collection.jpg"/>
+<div class="absolute top-4 left-4 bg-secondary/90 backdrop-blur-sm rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="recycling">recycling</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Climate Action and Community Resilience</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Reducing waste pollution, flooding risks, and climate vulnerability through recycling, upcycling, and community awareness.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../climate_resilience/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program 5 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Women sewing reusable pads" class="w-full h-full object-cover" data-alt="A detailed, intimate photograph of African women working skillfully at modern sewing machines in a clean, well-lit workshop, creating sustainable, reusable sanitary pads. The lighting is soft and even, highlighting the vibrant fabrics and their focused expressions. The scene conveys dignity, empowerment, and practical enterprise. The aesthetic aligns with a modern NGO, using crisp whites and subtle brand-aligned purple tones in the background." src="../assets/images/programs/reusable-pad-training.jpg"/>
+<div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Reusable Pad Production</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Promoting menstrual hygiene management and creating local economic opportunities through reusable pad micro-enterprises.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../reusable_pad_production/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program 6 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Support group session" class="w-full h-full object-cover" data-alt="A compassionate and professional photograph of a psychosocial support group session. A trained counselor is listening empathetically to a community member in a safe, comfortable, and brightly lit indoor space. The mood is calm, supportive, and trusting. The visual style is modern corporate with organic accents, utilizing high-quality whitespace and soft ambient light. The scene is grounded in human-centric care and professional standards." src="../assets/images/programs/psychosocial-support.jpg"/>
+<div class="absolute top-4 left-4 bg-tertiary-container/90 backdrop-blur-sm rounded-full p-2 text-on-tertiary-container">
+<span class="material-symbols-outlined text-2xl" data-icon="psychology">psychology</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Mental Health and Psychosocial Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Providing trauma-informed care, counseling, and community support systems to enhance mental well-being.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../mental_health_psychosocial_support/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Program 7 -->
+<div class="bg-surface-container-lowest rounded-[16px] overflow-hidden flex flex-col transition-transform hover:-translate-y-1 hover:shadow-xl shadow-[0_4px_20px_rgba(121,0,142,0.05)] border border-surface-container-highest">
+<div class="h-48 relative">
+<img alt="Community members participating in civic engagement training" class="w-full h-full object-cover" data-alt="Community members taking part in civic engagement and peacebuilding activities, with a focus on dialogue, participation, and accountable leadership." src="../assets/images/programs/community-participation.jpg"/>
+<div class="absolute top-4 left-4 bg-primary/90 backdrop-blur-sm rounded-full p-2 text-white">
+<span class="material-symbols-outlined text-2xl" data-icon="groups">groups</span>
+</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Civic Engagement and Peacebuilding</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 flex-grow">Strengthening citizen participation, peaceful dialogue, and community-led leadership for inclusive local development.</p>
+<a class="inline-flex items-center gap-2 font-label-bold text-label-bold text-primary hover:text-primary-container transition-colors mt-auto group" href="../civic_engagement_peacebuilding/">
+                                Learn More 
+                                <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 text-slate-300 font-['Plus_Jakarta_Sans'] text-sm w-full border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="md:col-span-1">
+<a class="inline-flex items-center gap-3 text-white font-extrabold text-lg mb-4" href="../home_jully_foundation_premium/">
+<img class="w-12 h-12 rounded-lg object-contain bg-white" src="../logo_jully_foundationpng_page2_transparent.png/screen.png" alt="Jully Foundation logo"/>
+<span>Jully Foundation</span>
+</a>
+<p class="text-slate-400 leading-relaxed">Empowering communities through education, enterprise, health, climate resilience, and accountable grassroots action.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Explore</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../about_us_jully_foundation/">About Us</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../programs_jully_foundation/">Programs</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../impact_jully_foundation/">Impact</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../projects_jully_foundation/">Projects</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Act</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../donate_jully_foundation/">Donate</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../get_involved_jully_foundation/">Get Involved</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../partners_jully_foundation/">Partners</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../gallery_jully_foundation/">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Connect</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact_jully_foundation/">Contact Us</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact_jully_foundation/">Newsletter</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact_jully_foundation/">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact_jully_foundation/">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs px-6">
+&copy; 2026 Jully Foundation. Inspirational professionalism in action.
+</div>
+</footer>
+<script src="../assets/js/jully-foundation-actions.js"></script>
+</body></html>

@@ -1,0 +1,230 @@
+:root {
+  --jf-primary: #79008e;
+  --jf-primary-dark: #420093;
+  --jf-secondary: #006e2f;
+  --jf-ink: #0b1c30;
+  --jf-muted: #514251;
+  --jf-soft: #f8f9ff;
+  --jf-line: #d3e4fe;
+  --jf-shadow: 0 18px 48px rgba(66, 0, 147, 0.10);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--jf-ink);
+  background:
+    radial-gradient(circle at top left, rgba(121, 0, 142, 0.035), transparent 32rem),
+    linear-gradient(180deg, #ffffff 0%, var(--jf-soft) 100%);
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(0, 110, 47, 0.32);
+  outline-offset: 3px;
+}
+
+nav,
+header[class*="sticky"] {
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06) !important;
+}
+
+nav img[alt="Jully Foundation logo"],
+header img[alt="Jully Foundation logo"],
+footer img[alt="Jully Foundation logo"] {
+  aspect-ratio: 1 / 1;
+  padding: 2px;
+  border: 1px solid rgba(121, 0, 142, 0.12);
+  box-shadow: 0 8px 22px rgba(66, 0, 147, 0.08);
+}
+
+nav a[href*="home_jully_foundation_premium"]:first-child,
+header a[href*="home_jully_foundation_premium"]:first-child {
+  min-width: max-content;
+}
+
+main > section {
+  position: relative;
+}
+
+main > section:first-child {
+  overflow: hidden;
+}
+
+main > section:first-child::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(121, 0, 142, 0.25), transparent);
+  pointer-events: none;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+img {
+  color: transparent;
+}
+
+main img:not([alt="Jully Foundation logo"]) {
+  filter: saturate(1.03) contrast(1.02);
+}
+
+.rounded-xl,
+.rounded-\[16px\],
+.rounded-2xl {
+  overflow: hidden;
+}
+
+[class*="shadow-"],
+.ambient-shadow {
+  box-shadow: var(--jf-shadow) !important;
+}
+
+article,
+main .border,
+main [class*="rounded"][class*="bg-white"],
+main [class*="rounded"][class*="bg-surface-container-lowest"] {
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+article:hover,
+main [class*="rounded"][class*="bg-white"]:hover,
+main [class*="rounded"][class*="bg-surface-container-lowest"]:hover {
+  border-color: rgba(121, 0, 142, 0.22) !important;
+  box-shadow: var(--jf-shadow) !important;
+}
+
+main a[class*="bg-secondary"],
+main a[class*="bg-primary"],
+main button[class*="bg-secondary"],
+main button[class*="bg-primary"],
+nav a[class*="bg-secondary"],
+nav button[class*="bg-secondary"] {
+  border-radius: 0.5rem !important;
+  box-shadow: 0 12px 24px rgba(0, 110, 47, 0.16);
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+main a[class*="bg-secondary"]:hover,
+main a[class*="bg-primary"]:hover,
+main button[class*="bg-secondary"]:hover,
+main button[class*="bg-primary"]:hover,
+nav a[class*="bg-secondary"]:hover,
+nav button[class*="bg-secondary"]:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 16px 30px rgba(0, 110, 47, 0.2);
+}
+
+footer {
+  margin-top: 0 !important;
+}
+
+footer a {
+  transition: color 180ms ease, transform 180ms ease;
+}
+
+footer a:hover {
+  transform: translateX(2px);
+}
+
+@media (min-width: 768px) {
+  main > section {
+    scroll-margin-top: 96px;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav > div,
+  header[class*="sticky"] > div {
+    gap: 1rem;
+  }
+
+  nav .hidden[class*="md:flex"],
+  header .hidden[class*="md:flex"] {
+    gap: 1rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  nav > div,
+  header[class*="sticky"] > div {
+    align-items: flex-start !important;
+    flex-wrap: wrap;
+    padding-inline: 1rem !important;
+  }
+
+  nav .hidden[class*="md:flex"],
+  header .hidden[class*="md:flex"],
+  nav ul.hidden[class*="md:flex"],
+  header nav.hidden[class*="md:flex"] {
+    display: flex !important;
+    width: 100%;
+    order: 3;
+    overflow-x: auto;
+    gap: 0.75rem !important;
+    padding: 0.75rem 0 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  nav .hidden[class*="md:flex"] a,
+  header .hidden[class*="md:flex"] a,
+  nav ul.hidden[class*="md:flex"] a,
+  header nav.hidden[class*="md:flex"] a {
+    flex: 0 0 auto;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid rgba(121, 0, 142, 0.12);
+    border-radius: 999px;
+    background: rgba(248, 249, 255, 0.9);
+    white-space: nowrap;
+  }
+
+  nav .md\:hidden,
+  header .md\:hidden {
+    display: none !important;
+  }
+
+  h1 {
+    font-size: clamp(2.35rem, 12vw, 3.4rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  h2 {
+    font-size: clamp(1.9rem, 9vw, 2.7rem) !important;
+  }
+
+  main > section {
+    padding-top: 4rem !important;
+    padding-bottom: 4rem !important;
+  }
+
+  main img:not([alt="Jully Foundation logo"]) {
+    max-height: 28rem;
+  }
+
+  footer .grid {
+    gap: 2rem !important;
+  }
+}
