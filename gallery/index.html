@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery - Jully Foundation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-background": "#0b1c30",
+                    "surface-variant": "#d3e4fe",
+                    "on-surface": "#0b1c30",
+                    "secondary-fixed-dim": "#4ae176",
+                    "outline": "#837282",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#7b0091",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#004c6e",
+                    "on-primary-container": "#fdc4ff",
+                    "secondary-fixed": "#6bff8f",
+                    "outline-variant": "#d5c0d3",
+                    "primary": "#79008e",
+                    "surface": "#f8f9ff",
+                    "error-container": "#ffdad6",
+                    "on-surface-variant": "#514251",
+                    "on-tertiary": "#ffffff",
+                    "on-tertiary-fixed": "#001e2f",
+                    "on-primary-fixed": "#350040",
+                    "on-error": "#ffffff",
+                    "inverse-surface": "#213145",
+                    "tertiary-fixed-dim": "#89ceff",
+                    "inverse-on-surface": "#eaf1ff",
+                    "surface-bright": "#f8f9ff",
+                    "surface-container": "#e5eeff",
+                    "surface-container-highest": "#d3e4fe",
+                    "on-secondary-container": "#007432",
+                    "surface-container-high": "#dce9ff",
+                    "surface-container-low": "#eff4ff",
+                    "tertiary-fixed": "#c9e6ff",
+                    "primary-container": "#9c15b5",
+                    "error": "#ba1a1a",
+                    "inverse-primary": "#f8acff",
+                    "primary-fixed-dim": "#f8acff",
+                    "secondary-container": "#6bff8f",
+                    "on-primary": "#ffffff",
+                    "on-tertiary-container": "#aedcff",
+                    "on-secondary-fixed": "#002109",
+                    "surface-dim": "#cbdbf5",
+                    "tertiary-container": "#00638e",
+                    "background": "#f8f9ff",
+                    "secondary": "#006e2f",
+                    "primary-fixed": "#ffd6ff",
+                    "on-secondary-fixed-variant": "#005321",
+                    "on-error-container": "#93000a",
+                    "surface-tint": "#9d18b6",
+                    "tertiary": "#004a6c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "8px",
+                    "gutter": "24px",
+                    "stack-lg": "64px",
+                    "stack-sm": "16px",
+                    "container-max": "1280px",
+                    "margin": "32px",
+                    "stack-md": "32px"
+            },
+            "fontFamily": {
+                    "caption": ["Manrope"],
+                    "label-bold": ["Manrope"],
+                    "body-md": ["Manrope"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "headline-lg": ["Plus Jakarta Sans"],
+                    "display": ["Plus Jakarta Sans"],
+                    "body-lg": ["Manrope"]
+            },
+            "fontSize": {
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "label-bold": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                    "display": ["48px", {"lineHeight": "1.1", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .masonry-grid {
+            column-count: 1;
+            column-gap: 24px;
+        }
+        @media (min-width: 768px) {
+            .masonry-grid { column-count: 2; }
+        }
+        @media (min-width: 1024px) {
+            .masonry-grid { column-count: 3; }
+        }
+        .masonry-item {
+            break-inside: avoid;
+            margin-bottom: 24px;
+        }
+        .african-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(121, 0, 142, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+<link href="../assets/css/jully-foundation-polish.css" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md font-['Plus_Jakarta_Sans'] text-sm font-medium sticky full-width top-0 z-50 border-b border-slate-100 dark:border-slate-800 shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center w-full max-w-7xl mx-auto px-6 py-4">
+<a class="text-2xl font-extrabold tracking-tight text-purple-900 dark:text-purple-100 cursor-pointer active:scale-95 transition-transform hover:opacity-90 transition-all duration-200 inline-flex items-center gap-3" href="../"><img class="w-10 h-10 rounded-lg object-contain bg-white" src="../assets/images/logo.png" alt="Jully Foundation logo"/><span>Jully Foundation</span></a>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 hover:opacity-90 transition-all duration-200 cursor-pointer active:scale-95 transition-transform" href="../">Home</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 hover:opacity-90 transition-all duration-200 cursor-pointer active:scale-95 transition-transform" href="../about/">About Us</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 hover:opacity-90 transition-all duration-200 cursor-pointer active:scale-95 transition-transform" href="../programs/">Programs</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 hover:opacity-90 transition-all duration-200 cursor-pointer active:scale-95 transition-transform" href="../impact/">Impact</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-300 hover:opacity-90 transition-all duration-200 cursor-pointer active:scale-95 transition-transform" href="../projects/">Projects</a>
+<a class="text-purple-700 dark:text-purple-400 border-b-2 border-purple-700 pb-1 font-bold hover:opacity-90 transition-all duration-200 cursor-pointer active:scale-95 transition-transform" href="../gallery/">Gallery</a>
+</div>
+<div class="flex items-center space-x-4 hidden md:flex">
+<a class="font-label-bold text-label-bold text-primary border border-primary px-4 py-2 rounded-lg hover:bg-surface-variant transition-colors" href="../contact/">Contact</a>
+<a class="font-label-bold text-label-bold bg-secondary text-on-secondary px-6 py-2 rounded-lg shadow-sm hover:bg-secondary-container hover:text-on-secondary-container transition-colors" href="../donate/">Donate</a>
+</div>
+<div class="md:hidden flex items-center">
+<span class="material-symbols-outlined text-purple-700 dark:text-purple-400 text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="w-full african-pattern min-h-screen pb-stack-lg">
+<!-- Hero Section -->
+<section class="max-w-container-max mx-auto px-gutter pt-stack-lg pb-stack-md text-center">
+<h1 class="font-display text-display text-primary mb-unit">Our Journey in Pictures</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Witness the tangible impact of our programs across communities. Every image tells a story of hope, resilience, and collaborative progress.</p>
+</section>
+<!-- Gallery Filters -->
+<section class="max-w-container-max mx-auto px-gutter mb-stack-md flex justify-center flex-wrap gap-4">
+<button class="px-6 py-2 rounded-full bg-primary text-on-primary font-label-bold text-label-bold shadow-sm" data-gallery-filter="all">All</button>
+<button class="px-6 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface font-label-bold text-label-bold hover:bg-surface-variant transition-colors" data-gallery-filter="events">Events</button>
+<button class="px-6 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface font-label-bold text-label-bold hover:bg-surface-variant transition-colors" data-gallery-filter="field work">Field Work</button>
+<button class="px-6 py-2 rounded-full bg-surface-container border border-outline-variant text-on-surface font-label-bold text-label-bold hover:bg-surface-variant transition-colors" data-gallery-filter="workshops">Workshops</button>
+</section>
+<!-- Masonry Grid -->
+<section class="max-w-container-max mx-auto px-gutter masonry-grid">
+<!-- Item 1 (Field Work) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A compelling photograph of community field workers in Africa distributing essential supplies to joyful children in a rural village setting. The lighting is bright and natural, casting warm sunbeams that highlight genuine smiles. The composition is dynamic, capturing active movement and human connection. The overall aesthetic feels grounded, authentic, and aligns with an inspirational modern corporate style, utilizing subtle vibrant green accents in the environment." src="../assets/images/site/idp-camp-women.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Field Work</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Community Outreach</h3>
+</div>
+</div>
+<!-- Item 2 (Workshops - Tall) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A vertical portrait-oriented photo of a lively educational workshop taking place in a bright, modern community hall. Adults and young people are gathered around tables, actively engaging with learning materials. Soft ambient light filters through large windows, creating a hopeful and productive mood. The scene is professional yet warm, incorporating deep purple and light grey tonal elements within the room's decor to match a modern corporate aesthetic with organic African accents." src="../assets/images/site/training-session.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Workshops</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Skills Training Session</h3>
+</div>
+</div>
+<!-- Item 3 (Events) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Inclusive community participation and training for civic empowerment and social inclusion." src="../assets/images/programs/pwd-training-session.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Events</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Annual Village Assembly</h3>
+</div>
+</div>
+<!-- Item 4 (Field Work) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Waste collection and recycling activity showing community climate action and responsible waste disposal." src="../assets/images/programs/waste-cloth-collection.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Field Work</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Waste-to-Value Initiative</h3>
+</div>
+</div>
+<!-- Item 5 (Workshops) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="A collaborative workspace scene showing a diverse group of foundation members discussing blueprints and planning documents spread across a large wooden table. Soft ambient light from overhead fixtures casts gentle shadows, creating a professional, trustworthy environment. The color palette incorporates deep purples and crisp whites from the documents. The image conveys steady, long-term planning and international NGO standards." src="../assets/images/site/partners-meeting.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Workshops</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Strategic Planning</h3>
+</div>
+</div>
+<!-- Item 6 (Events) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Community members participating in civic engagement and peacebuilding activities." src="../assets/images/Civic Engagement1.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Events</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Civic Engagement Session</h3>
+</div>
+</div>
+<!-- Item 7 (Events) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Peacebuilding and inclusive community participation activity." src="../assets/images/Civic Engagement2.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Events</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Peacebuilding Dialogue</h3>
+</div>
+</div>
+<!-- Item 8 (Workshops) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Girls participating in ICT and education skills training." src="../assets/images/ict.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Workshops</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Girls ICT Learning</h3>
+</div>
+</div>
+<!-- Item 9 (Field Work) -->
+<div class="masonry-item relative group rounded-xl overflow-hidden shadow-[0_4px_20px_rgba(121,0,142,0.08)] bg-surface">
+<img class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Community waste collection activity for cleaner and safer environments." src="../assets/images/Waste Collection.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+<span class="font-caption text-caption text-primary-fixed bg-on-primary-fixed/50 px-2 py-1 rounded w-fit mb-2">Field Work</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Community Waste Collection</h3>
+</div>
+</div>
+</section>
+<!-- Video Stories Section -->
+<section class="max-w-container-max mx-auto px-gutter mt-stack-lg mb-stack-lg">
+<div class="bg-surface-container-low rounded-xl p-8 md:p-12 shadow-[0_8px_30px_rgba(121,0,142,0.05)] border border-outline-variant/30 flex flex-col md:flex-row gap-8 items-center">
+<div class="w-full md:w-1/2 relative rounded-lg overflow-hidden group cursor-pointer">
+<img class="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A cinematic still frame from a documentary video. It shows an inspiring portrait of a local African community leader speaking passionately, captured with professional depth of field against a softly blurred village backdrop. The lighting is dramatic yet natural, emphasizing the subject's expression. A subtle digital overlay of a play button is centered. The visual tone aligns with modern corporate aesthetics merged with human-centric grassroots action." src="../assets/images/site/inclusive-participation.jpg"/>
+<div class="absolute inset-0 bg-inverse-surface/30 group-hover:bg-inverse-surface/20 transition-colors flex items-center justify-center">
+<div class="w-16 h-16 bg-surface-container-lowest rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<span class="font-caption text-caption text-primary tracking-widest uppercase mb-2">Documentary</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Voices from the Ground: Skills, Dignity, and Resilience</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Experience how women, girls, youth, IDPs, and persons with disabilities are using green skills, reusable products, and community support to build cleaner and more resilient lives.</p>
+<a class="w-fit font-label-bold text-label-bold text-primary flex items-center gap-2 hover:text-primary-container transition-colors group" href="../stories/">
+                        Watch Full Story 
+                        <span class="material-symbols-outlined transform group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-950 text-slate-300 font-['Plus_Jakarta_Sans'] text-sm w-full border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+<div class="md:col-span-1">
+<a class="inline-flex items-center gap-3 text-white font-extrabold text-lg mb-4" href="../">
+<img class="w-12 h-12 rounded-lg object-contain bg-white" src="../assets/images/logo.png" alt="Jully Foundation logo"/>
+<span>Jully Foundation</span>
+</a>
+<p class="text-slate-400 leading-relaxed">Empowering communities through education, enterprise, health, climate resilience, and accountable grassroots action.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Explore</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../about/">About Us</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../programs/">Programs</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../impact/">Impact</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../projects/">Projects</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Act</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../donate/">Donate</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../get-involved/">Get Involved</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../partners/">Partners</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../gallery/">Gallery</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4 uppercase tracking-wider text-xs">Connect</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact/">Contact Us</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact/">Newsletter</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact/">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white transition-colors" href="../contact/">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs px-6">
+&copy; 2026 Jully Foundation. Inspirational professionalism in action.
+</div>
+</footer>
+<script src="../assets/js/jully-foundation-actions.js"></script>
+</body></html>

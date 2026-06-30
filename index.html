@@ -1,19 +1,737 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Jully Foundation supports women, girls, youth, IDPs, persons with disabilities, and underserved communities through education, empowerment, climate resilience, and peacebuilding programs.">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://jullyfoundation.org/">
-  <meta http-equiv="refresh" content="0; url=./home_jully_foundation_premium/">
-  <title>Jully Foundation</title>
-</head>
-<body>
-  <p><a href="./home_jully_foundation_premium/">Open Jully Foundation</a></p>
-  <script>
-    window.location.replace('./home_jully_foundation_premium/');
-  </script>
-<script src="assets/js/jully-foundation-actions.js"></script>
-</body>
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Jully Foundation - Empowering Communities</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary-container": "#a6f2d1",
+              "on-secondary-fixed-variant": "#00513b",
+              "surface-container-high": "#e7e8e9",
+              "tertiary-container": "#783600",
+              "secondary-fixed": "#a6f2d1",
+              "tertiary-fixed-dim": "#ffb68b",
+              "surface-container-lowest": "#ffffff",
+              "surface-bright": "#f8f9fa",
+              primary: "#420093",
+              "on-tertiary-container": "#ffa267",
+              "on-secondary": "#ffffff",
+              "on-background": "#191c1d",
+              "on-error-container": "#93000a",
+              "surface-container-highest": "#e1e3e4",
+              "inverse-on-surface": "#f0f1f2",
+              "surface-variant": "#e1e3e4",
+              "on-tertiary-fixed-variant": "#753400",
+              error: "#ba1a1a",
+              surface: "#f8f9fa",
+              "inverse-primary": "#d3bbff",
+              "primary-fixed": "#ebddff",
+              outline: "#7b7485",
+              "on-secondary-container": "#237157",
+              "on-surface": "#191c1d",
+              background: "#f8f9fa",
+              "surface-container-low": "#f3f4f5",
+              "primary-container": "#5b21b6",
+              "tertiary-fixed": "#ffdbc8",
+              "on-error": "#ffffff",
+              "on-secondary-fixed": "#002116",
+              "surface-dim": "#d9dadb",
+              "on-primary-container": "#c7aaff",
+              "surface-container": "#edeeef",
+              "secondary-fixed-dim": "#8bd6b6",
+              "outline-variant": "#ccc3d6",
+              "on-tertiary-fixed": "#321300",
+              "on-surface-variant": "#4a4453",
+              "on-primary": "#ffffff",
+              "inverse-surface": "#2e3132",
+              "on-primary-fixed-variant": "#581db3",
+              "primary-fixed-dim": "#d3bbff",
+              "on-primary-fixed": "#250059",
+              tertiary: "#552400",
+              "error-container": "#ffdad6",
+              secondary: "#1b6b51",
+              "on-tertiary": "#ffffff",
+              "surface-tint": "#713dcc",
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+            spacing: {
+              "stack-md": "32px",
+              "stack-sm": "16px",
+              "section-padding": "80px",
+              gutter: "24px",
+              "container-max": "1280px",
+              base: "8px",
+              "stack-lg": "48px",
+            },
+            fontFamily: {
+              "body-lg": ["Plus Jakarta Sans"],
+              "body-md": ["Plus Jakarta Sans"],
+              "label-sm": ["Plus Jakarta Sans"],
+              "headline-md": ["Plus Jakarta Sans"],
+              "headline-xl": ["Plus Jakarta Sans"],
+              "headline-lg": ["Plus Jakarta Sans"],
+            },
+            fontSize: {
+              "body-lg": [
+                "18px",
+                {
+                  lineHeight: "1.6",
+                  fontWeight: "400",
+                },
+              ],
+              "body-md": [
+                "16px",
+                {
+                  lineHeight: "1.6",
+                  fontWeight: "400",
+                },
+              ],
+              "label-sm": [
+                "14px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "0.05em",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-md": [
+                "24px",
+                {
+                  lineHeight: "1.3",
+                  fontWeight: "600",
+                },
+              ],
+              "headline-xl": [
+                "48px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.02em",
+                  fontWeight: "700",
+                },
+              ],
+              "headline-lg": [
+                "36px",
+                {
+                  lineHeight: "1.2",
+                  letterSpacing: "-0.01em",
+                  fontWeight: "700",
+                },
+              ],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        background-color: theme("colors.background");
+        color: theme("colors.on-background");
+        -webkit-font-smoothing: antialiased;
+      }
+      .ambient-shadow {
+        box-shadow: 0 10px 30px rgba(91, 33, 182, 0.05);
+      }
+    </style>
+    <link href="assets/css/jully-foundation-polish.css" rel="stylesheet" />
+  </head>
+  <body class="font-body-md text-body-md pt-20">
+    <!-- TopNavBar -->
+    <nav
+      class="bg-white/90 dark:bg-slate-950/90 backdrop-blur-md font-['Plus_Jakarta_Sans'] antialiased fixed top-0 w-full z-50 border-b border-slate-100 dark:border-slate-800 transition-all duration-300"
+    >
+      <div
+        class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20"
+      >
+        <!-- Brand -->
+        <a
+          class="text-2xl font-bold tracking-tight text-violet-900 dark:text-violet-50 flex items-center gap-2 inline-flex gap-3"
+          href="./"
+          ><img
+            class="w-10 h-10 rounded-lg object-contain bg-white"
+            src="assets/images/logo.png"
+            alt="Jully Foundation logo"
+          /><span>Jully Foundation</span></a
+        >
+        <!-- Navigation Links (Desktop) -->
+        <div class="hidden md:flex items-center gap-6">
+          <a
+            class="text-violet-700 dark:text-violet-400 font-semibold border-b-2 border-violet-700 dark:border-violet-400 pb-1 hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="./"
+            >Home</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="about/"
+            >About Us</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="programs/"
+            >Programs</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="impact/"
+            >Impact</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="projects/"
+            >Projects</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="gallery/"
+            >Gallery</a
+          >
+          <a
+            class="text-slate-600 dark:text-slate-400 font-medium hover:text-violet-800 dark:hover:text-violet-200 transition-all duration-300"
+            href="contact/"
+            >Contact Us</a
+          >
+        </div>
+        <!-- Trailing Action -->
+        <div class="hidden md:flex">
+          <a
+            class="bg-secondary text-on-secondary px-6 py-2.5 rounded-lg font-label-sm text-label-sm hover:opacity-90 transition-opacity transform active:scale-95 duration-200"
+            href="donate/"
+          >
+            Donate
+          </a>
+        </div>
+        <!-- Mobile Menu Toggle (Visual only for structural completeness) -->
+        <button class="md:hidden text-primary p-2" data-mobile-menu>
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <header
+      class="relative w-full min-h-[870px] flex items-center bg-surface-container-lowest overflow-hidden"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          alt="Hero Image"
+          class="w-full h-full object-cover object-center opacity-90"
+          data-alt="Women, youth, and vulnerable community members engaged in inclusive empowerment and resilience programming."
+          src="assets/images/programs/idp-women.jpg"
+        />
+        <!-- Subtle gradient overlay for text readability -->
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-transparent"
+        ></div>
+      </div>
+      <div
+        class="relative z-10 w-full max-w-container-max mx-auto px-gutter py-section-padding"
+      >
+        <div class="max-w-2xl">
+          <h1
+            class="font-headline-xl text-headline-xl text-on-surface mb-stack-sm"
+          >
+            Empowering Women, Youth, and Communities for a Sustainable Future.
+          </h1>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md"
+          >
+            Building resilience and opportunity across Nigeria through
+            institutional excellence and grassroots action.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a
+              class="inline-flex items-center justify-center bg-secondary text-on-secondary font-label-sm text-label-sm px-8 py-4 rounded-lg hover:opacity-90 transition-all shadow-lg shadow-secondary/20 active:scale-[0.98]"
+              href="donate/"
+            >
+              Donate Now
+            </a>
+            <a
+              class="inline-flex items-center justify-center bg-transparent border border-primary text-primary font-label-sm text-label-sm px-8 py-4 rounded-lg hover:bg-primary/5 transition-all active:scale-[0.98]"
+              href="impact/"
+            >
+              Explore Our Impact
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Impact Section -->
+    <section
+      class="py-section-padding bg-surface px-gutter relative z-20 -mt-12"
+    >
+      <div class="max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Stat 1 -->
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-6 text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-3xl"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >groups</span
+              >
+            </div>
+            <h3 class="font-headline-lg text-headline-lg text-primary mb-2">
+              25,000+
+            </h3>
+            <p
+              class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"
+            >
+              Lives Touched
+            </p>
+          </div>
+          <!-- Stat 2 -->
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-secondary/10 flex items-center justify-center mb-6 text-secondary"
+            >
+              <span
+                class="material-symbols-outlined text-3xl"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >nature</span
+              >
+            </div>
+            <h3 class="font-headline-lg text-headline-lg text-secondary mb-2">
+              50,000
+            </h3>
+            <p
+              class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"
+            >
+              Trees Planted
+            </p>
+          </div>
+          <!-- Stat 3 -->
+          <div
+            class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center"
+          >
+            <div
+              class="w-16 h-16 rounded-full bg-primary-container/10 flex items-center justify-center mb-6 text-primary"
+            >
+              <span
+                class="material-symbols-outlined text-3xl"
+                style="font-variation-settings: &quot;FILL&quot; 1"
+                >school</span
+              >
+            </div>
+            <h3 class="font-headline-lg text-headline-lg text-primary mb-2">
+              1,200
+            </h3>
+            <p
+              class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider"
+            >
+              Scholarships Awarded
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mission Section -->
+    <section class="py-section-padding bg-surface-container-lowest px-gutter">
+      <div
+        class="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-16"
+      >
+        <div class="flex-1">
+          <div
+            class="relative rounded-xl overflow-hidden ambient-shadow aspect-[4/3]"
+          >
+            <img
+              alt="Mission Focus"
+              class="w-full h-full object-cover"
+              data-alt="A beautifully composed, minimalist photograph of an architect or planner reviewing blueprints in a clean, modern workspace. The lighting is soft and directional, highlighting the crisp lines of the documents and the thoughtful expression on the person's face. The palette is dominated by pristine whites, soft grays, and warm skin tones, conveying a mood of 'Inspirational Professionalism' and institutional excellence. The image avoids charity tropes, focusing instead on structural planning and long-term vision."
+              src="assets/images/site/partners-meeting.jpg"
+            />
+          </div>
+        </div>
+        <div class="flex-1 max-w-xl">
+          <span
+            class="font-label-sm text-label-sm text-primary uppercase tracking-widest mb-4 block"
+            >Our Approach</span
+          >
+          <h2
+            class="font-headline-xl text-headline-xl text-on-surface mb-stack-sm"
+          >
+            Inspirational Professionalism.
+          </h2>
+          <p
+            class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md"
+          >
+            We believe that true impact requires more than good intentions; it
+            demands operational excellence. By pairing institutional rigor with
+            deep empathy, we construct scalable frameworks that empower local
+            communities to lead their own sustainable development.
+          </p>
+          <a
+            class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm hover:text-primary-container transition-colors group"
+            href="about/#our-philosophy"
+          >
+            Read Our Philosophy
+            <span
+              class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+              >arrow_forward</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- Core Programs -->
+    <section class="py-section-padding bg-surface px-gutter">
+      <div class="max-w-container-max mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">
+            Core Programs
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant">
+            Strategic initiatives designed to create lasting, systemic change.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Program Card 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow group hover:-translate-y-1 transition-transform duration-300"
+          >
+            <div class="h-64 overflow-hidden bg-surface-container-low flex items-center justify-center">
+              <img
+                alt="Women's Empowerment"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                data-alt="Nigerian women entrepreneurs displaying eco-friendly products made from recycled textiles during a green skills empowerment program."
+                src="assets/images/programs/sehp-handmade-products.jpg"
+              />
+            </div>
+            <div class="p-8">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-3"
+              >
+                Women's Economic Empowerment
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3"
+              >
+                Providing skills, mentorship, microgrants, zero-interest loan
+                opportunities, and market access for women-led green
+                enterprises.
+              </p>
+              <a
+                class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm hover:underline"
+                href="womens-economic-empowerment/"
+              >
+                Learn More
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+          <!-- Program Card 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow group hover:-translate-y-1 transition-transform duration-300"
+          >
+            <div class="h-64 overflow-hidden bg-surface-container-low flex items-center justify-center">
+              <img
+                alt="Youth Education"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                data-alt="Youth participants in Nigeria engaged in a leadership and education development session."
+                src="assets/images/Youth Education & Leadership.jpg"
+              />
+            </div>
+            <div class="p-8">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-3"
+              >
+                Youth Education &amp; Leadership
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3"
+              >
+                Investing in the next generation through comprehensive
+                scholarships and intensive leadership development programs.
+              </p>
+              <a
+                class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm hover:underline"
+                href="youth-education-leadership/"
+              >
+                Learn More
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+          <!-- Program Card 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-xl overflow-hidden ambient-shadow group hover:-translate-y-1 transition-transform duration-300"
+          >
+            <div class="h-64 overflow-hidden bg-surface-container-low flex items-center justify-center">
+              <img
+                alt="Environmental Sustainability"
+                class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
+                data-alt="Community members in Nigeria sorting and recycling textile and plastic waste as part of a climate resilience initiative."
+                src="assets/images/Recycling Plastic.jpg"
+              />
+            </div>
+            <div class="p-8">
+              <h3
+                class="font-headline-md text-headline-md text-on-surface mb-3"
+              >
+                Climate Resilience
+              </h3>
+              <p
+                class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-3"
+              >
+                Reducing textile and plastic waste through recycling, upcycling,
+                responsible disposal, and community climate awareness.
+              </p>
+              <a
+                class="inline-flex items-center gap-2 text-primary font-label-sm text-label-sm hover:underline"
+                href="climate-resilience/"
+              >
+                Learn More
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section -->
+    <section class="py-section-padding bg-surface-container-lowest px-gutter">
+      <div class="max-w-4xl mx-auto text-center">
+        <span
+          class="material-symbols-outlined text-6xl text-primary/20 mb-8 block"
+          style="font-variation-settings: &quot;FILL&quot; 1"
+          >format_quote</span
+        >
+        <h2
+          class="font-headline-md text-headline-md text-on-surface leading-relaxed mb-12"
+        >
+          "The foundation didn't just offer assistance; they offered a
+          partnership. With their support, our cooperative was able to scale our
+          operations, providing stable income for fifty families in our
+          district."
+        </h2>
+        <div class="flex flex-col items-center">
+          <img
+            alt="Amina T."
+            class="w-20 h-20 rounded-full object-cover mb-4 border-2 border-surface"
+            data-alt="A striking, intimate portrait of an African woman looking directly into the camera with a profound sense of dignity and quiet strength. The background is completely neutral and softly blurred, ensuring absolute focus on her face. The lighting is cinematic, highlighting the rich tones of her skin and the determination in her eyes. The image is sophisticated, moving completely away from charity clichés to present her as a capable, equal partner in development."
+            src="assets/images/Profile.jpg"
+          />
+          <p class="font-label-sm text-label-sm text-on-surface">Amina T.</p>
+          <p class="font-body-md text-body-md text-on-surface-variant text-sm">
+            Agricultural Cooperative Leader
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Trust Signals -->
+    <section class="py-12 bg-surface border-t border-surface-variant px-gutter">
+      <div class="max-w-container-max mx-auto text-center">
+        <p
+          class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest mb-8"
+        >
+          Trusted by Global Partners
+        </p>
+        <div
+          class="flex flex-wrap justify-center gap-12 opacity-60 grayscale hover:grayscale-0 transition-all duration-500"
+        >
+          <!-- Placeholders for logos -->
+          <div
+            class="flex items-center gap-2 font-headline-md text-on-surface-variant font-bold"
+          >
+            <span class="material-symbols-outlined">public</span> Global.org
+          </div>
+          <div
+            class="flex items-center gap-2 font-headline-md text-on-surface-variant font-bold"
+          >
+            <span class="material-symbols-outlined">account_balance</span>
+            United Trust
+          </div>
+          <div
+            class="flex items-center gap-2 font-headline-md text-on-surface-variant font-bold"
+          >
+            <span class="material-symbols-outlined">spa</span> EcoFund
+          </div>
+          <div
+            class="flex items-center gap-2 font-headline-md text-on-surface-variant font-bold"
+          >
+            <span class="material-symbols-outlined">assured_workload</span> Apex
+            Foundation
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="bg-slate-950 text-slate-300 font-['Plus_Jakarta_Sans'] text-sm w-full border-t border-slate-800"
+    >
+      <div
+        class="max-w-7xl mx-auto px-8 py-14 grid grid-cols-1 md:grid-cols-4 gap-10"
+      >
+        <div class="md:col-span-1">
+          <a
+            class="inline-flex items-center gap-3 text-white font-extrabold text-lg mb-4"
+            href="./"
+          >
+            <img
+              class="w-12 h-12 rounded-lg object-contain bg-white"
+              src="assets/images/logo.png"
+              alt="Jully Foundation logo"
+            />
+            <span>Jully Foundation</span>
+          </a>
+          <p class="text-slate-400 leading-relaxed">
+            Empowering communities through education, enterprise, health,
+            climate resilience, and accountable grassroots action.
+          </p>
+        </div>
+        <div>
+          <h4
+            class="text-white font-bold mb-4 uppercase tracking-wider text-xs"
+          >
+            Explore
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="about/"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="programs/"
+                >Programs</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="impact/"
+                >Impact</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="projects/"
+                >Projects</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-white font-bold mb-4 uppercase tracking-wider text-xs"
+          >
+            Act
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="donate/"
+                >Donate</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="get-involved/"
+                >Get Involved</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="partners/"
+                >Partners</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="gallery/"
+                >Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4
+            class="text-white font-bold mb-4 uppercase tracking-wider text-xs"
+          >
+            Connect
+          </h4>
+          <ul class="space-y-3">
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="contact/"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="contact/"
+                >Newsletter</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="contact/"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-slate-400 hover:text-white transition-colors"
+                href="contact/"
+                >Terms of Service</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="border-t border-slate-800 py-6 text-center text-slate-500 text-xs px-6"
+      >
+        &copy; 2026 Jully Foundation. Inspirational professionalism in action.
+      </div>
+    </footer>
+    <script src="assets/js/jully-foundation-actions.js"></script>
+  </body>
 </html>

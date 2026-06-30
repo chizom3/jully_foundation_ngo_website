@@ -48,8 +48,8 @@ footer img[alt="Jully Foundation logo"] {
   box-shadow: 0 8px 22px rgba(66, 0, 147, 0.08);
 }
 
-nav a[href*="home_jully_foundation_premium"]:first-child,
-header a[href*="home_jully_foundation_premium"]:first-child {
+nav a:first-child,
+header a:first-child {
   min-width: max-content;
 }
 

@@ -63,7 +63,7 @@
     if (donateButton) {
       donateButton.addEventListener('click', function () {
         window.alert('Flutterwave checkout will be connected soon. For now, please contact Jully Foundation to complete a ' + donationMode.toLowerCase() + ' donation of ' + donationAmount + '.');
-        window.location.href = '../contact_jully_foundation/';
+        window.location.href = '../contact/';
       });
     }
 

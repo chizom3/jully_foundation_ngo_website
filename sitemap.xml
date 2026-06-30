@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://jullyfoundation.org/</loc><priority>1.0</priority></url>
-  <url><loc>https://jullyfoundation.org/home_jully_foundation_premium/</loc><priority>1.0</priority></url>
-  <url><loc>https://jullyfoundation.org/about_us_jully_foundation/</loc><priority>0.9</priority></url>
-  <url><loc>https://jullyfoundation.org/programs_jully_foundation/</loc><priority>0.9</priority></url>
-  <url><loc>https://jullyfoundation.org/projects_jully_foundation/</loc><priority>0.9</priority></url>
-  <url><loc>https://jullyfoundation.org/impact_jully_foundation/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/gallery_jully_foundation/</loc><priority>0.7</priority></url>
-  <url><loc>https://jullyfoundation.org/get_involved_jully_foundation/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/partners_jully_foundation/</loc><priority>0.7</priority></url>
-  <url><loc>https://jullyfoundation.org/contact_jully_foundation/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/donate_jully_foundation/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/sustainable_empowerher_for_peace/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/green_vocational_skills_empowerment/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/girls_education_ict_skills/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/climate_resilience/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/reusable_pad_production/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/mental_health_psychosocial_support/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/civic_engagement_peacebuilding/</loc><priority>0.8</priority></url>
-  <url><loc>https://jullyfoundation.org/womens_economic_empowerment/</loc><priority>0.7</priority></url>
-  <url><loc>https://jullyfoundation.org/youth_education_leadership/</loc><priority>0.7</priority></url>
-  <url><loc>https://jullyfoundation.org/annual_reports_jully_foundation/</loc><priority>0.5</priority></url>
-  <url><loc>https://jullyfoundation.org/stories_jully_foundation/</loc><priority>0.6</priority></url>
-  <url><loc>https://jullyfoundation.org/strategic_plan_jully_foundation/</loc><priority>0.6</priority></url>
+  <url><loc>https://jullyfoundation.org/about/</loc><priority>0.9</priority></url>
+  <url><loc>https://jullyfoundation.org/programs/</loc><priority>0.9</priority></url>
+  <url><loc>https://jullyfoundation.org/projects/</loc><priority>0.9</priority></url>
+  <url><loc>https://jullyfoundation.org/impact/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/gallery/</loc><priority>0.7</priority></url>
+  <url><loc>https://jullyfoundation.org/get-involved/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/partners/</loc><priority>0.7</priority></url>
+  <url><loc>https://jullyfoundation.org/contact/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/donate/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/sustainable-empowerher-for-peace/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/green-vocational-skills-empowerment/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/girls-education-ict-skills/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/climate-resilience/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/reusable-pad-production/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/mental-health-psychosocial-support/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/civic-engagement-peacebuilding/</loc><priority>0.8</priority></url>
+  <url><loc>https://jullyfoundation.org/womens-economic-empowerment/</loc><priority>0.7</priority></url>
+  <url><loc>https://jullyfoundation.org/youth-education-leadership/</loc><priority>0.7</priority></url>
+  <url><loc>https://jullyfoundation.org/annual-reports/</loc><priority>0.5</priority></url>
+  <url><loc>https://jullyfoundation.org/stories/</loc><priority>0.6</priority></url>
+  <url><loc>https://jullyfoundation.org/strategic-plan/</loc><priority>0.6</priority></url>
 </urlset>
